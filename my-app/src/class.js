@@ -1,27 +1,8 @@
-class Person{
-    
-    constructor(name, age){
-        this.name = name;
-        this.age = age;
-    }
+const Person = require('./Person');
+const Programmer = require('./Programmer');
 
-    greeting() {
-        console.log(`Olá, meu nome é ${this.name} e eu tenho ${this.age} anos!`);
-    }
+let pessoa1 = new Person('Gustavo', 19, 65, 1.77);
+pessoa1.greeting();
 
-}
-
-// let gustavo = new Person('Gustavo', 19);
-// gustavo.greeting();
-
-class Alumn extends Person{
-
-    constructor(name, age, turma){
-        super(name, age);
-        this.turma = turma;
-    }
-
-}
-
-let igor = new Alumn('Igor', 26, '1092');
-console.log(igor);
+let pessoa2 = new Programmer('Sebastian', 12, 38, 1.50, 'Junior');
+pessoa2.greeting();
