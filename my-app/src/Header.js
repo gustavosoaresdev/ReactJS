@@ -6,7 +6,7 @@ function Header(props) {
     return (
         <header className='header'>
             <h1>{props.title}</h1>
-            <Menu links={props.links}></Menu>
+            <Menu menu={props.menu}></Menu>
         </header>
     );
 }
