@@ -1,16 +1,10 @@
 import React from 'react';
+import Header from './Header';
 import './App.css';
 
 function App() {
   return (
-    <header className='header'>
-      <h1>Gustavo</h1>
-      <ul className='menu'>
-        <li><a href=''>Sobre</a></li>
-        <li><a href=''>Comprar</a></li>
-        <li><a href=''>Contato</a></li>
-      </ul>
-    </header>
+    <Header title='Gustavo' links={['Sobre', 'Comprar', 'Contato', 'Endereço']}></Header>
   );
 }
 
